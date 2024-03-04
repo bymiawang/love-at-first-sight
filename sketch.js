@@ -1,5 +1,5 @@
 
-const density = '情钟见一'
+const density = '爱'
 let video;
 
 
@@ -9,12 +9,12 @@ function setup() {
   video.size(72,45);
   video.hide();
   button = createButton('save');
-  button.position(674, 506);
+  button.position(674, 485);
   button.mousePressed(keyPressed);
 }
 
 function draw() {
-  background(255);
+  background(252, 235, 235)
   let w = width / video.width;
   let h = width / video.height;
   video.loadPixels();
@@ -40,5 +40,5 @@ function draw() {
 }
 
 function keyPressed() {
-    saveCanvas('一见钟情', 'jpg');
+    saveCanvas('爱', 'jpg');
 }
